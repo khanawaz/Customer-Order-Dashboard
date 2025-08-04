@@ -17,6 +17,11 @@
   "homepage": "https://github.com/khanawaz/Customer-Order-Dashboard#readme",
   "description": "",
   "dependencies": {
-    "csv-parser": "^3.2.0"
+    "@prisma/client": "^6.13.0",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^17.2.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.13.0"
   }
 }
