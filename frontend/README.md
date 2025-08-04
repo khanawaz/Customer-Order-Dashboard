@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+ 🧾 Customer Dashboard Frontend
+
+This is a simple frontend application built with **Next.js**, **React**, and **Tailwind CSS** that connects to a backend REST API and displays a list of customers.
+
+## 🚀 Features
+
+- ✅ View all customers in a clean table layout
+- 🔍 Search customers by name or email (client-side)
+- 📦 Display customer name, email, city, country, and order count
+- 📡 Integrated with REST API (`/customers`)
+- 🎨 Styled using Tailwind CSS
+- 🔁 Handles loading and error states gracefully
+
+---
+
+## 📁 Project Structure
+
+```
+
+app/
+└── page.js          # Main UI code (Customer List page)
+
+public/
+└── ...              # Static assets (if any)
+
+styles/
+└── globals.css      # Tailwind CSS imports
+
+README.md
+
+````
+
+---
+
+## ⚙️ Prerequisites
+
+- Node.js (v16 or above recommended)
+- Backend API running locally on `http://localhost:4000`
+  - Make sure your `/customers` endpoint returns data with `orderCount`
+
+---
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/your-username/customer-dashboard-frontend.git
+cd customer-dashboard-frontend
+npm install
+````
+
+---
+
+## 🧪 Running the App (Development)
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the app on [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔗 API Endpoint Used
 
-## Learn More
+This frontend expects the following backend API running on:
 
-To learn more about Next.js, take a look at the following resources:
+```
+GET http://localhost:4000/customers
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Example expected response:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john@example.com",
+      "city": "New York",
+      "country": "USA",
+      "orderCount": 5
+    }
+  ]
+}
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧼 Styling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tailwind CSS is used throughout the project. You can modify styles inside `app/page.js` or extend Tailwind in `tailwind.config.js`.
+
+---
+
+## 🙋‍♂️ Author
+
+Made with ❤️ by Nawaz Khan
+Frontend: **Next.js + Tailwind CSS**
+Backend: [Express.js + Prisma](https://github.com/your-backend-repo)
+
+---
+
