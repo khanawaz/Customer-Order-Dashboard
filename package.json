@@ -1,0 +1,22 @@
+{
+  "name": "customer-order-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanawaz/Customer-Order-Dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khanawaz/Customer-Order-Dashboard/issues"
+  },
+  "homepage": "https://github.com/khanawaz/Customer-Order-Dashboard#readme",
+  "description": "",
+  "dependencies": {
+    "csv-parser": "^3.2.0"
+  }
+}
